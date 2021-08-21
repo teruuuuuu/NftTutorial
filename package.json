@@ -1,0 +1,46 @@
+{
+  "name": "nfttutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack serve --open",
+    "build": "webpack",
+    "truffle": "truffle compile",
+    "server": "http-server -o dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.14.4",
+    "@babel/preset-react": "^7.13.13",
+    "assert": "^2.0.0",
+    "babel-loader": "^8.2.2",
+    "crypto-browserify": "^3.12.0",
+    "css-loader": "^5.2.6",
+    "html-webpack-plugin": "^5.3.1",
+    "http-server": "^0.12.3",
+    "https-browserify": "^1.0.0",
+    "less": "^4.1.1",
+    "less-loader": "^9.0.0",
+    "os-browserify": "^0.3.0",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "style-loader": "^2.0.0",
+    "truffle": "^5.4.6",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.4.1",
+    "classnames": "^2.3.1",
+    "ipfs-http-client": "^52.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "web3": "^1.3.6"
+  }
+}

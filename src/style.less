@@ -1,0 +1,123 @@
+body {
+  background-color: #08060d;
+  color: #cfd2da;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro",
+    "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体",
+    "メイリオ", sans-serif;
+
+  #root {
+    height: 100vh;
+    grid-template-rows: 1fr;
+
+    .appArea {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+
+      .contentsArea {
+        .account {
+          text-align: center;
+        }
+
+        .box {
+          .header {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .mode {
+              cursor: pointer;
+              border-bottom: 1px solid white;
+              text-align: center;
+            }
+            .mode.on {
+              background-color: white;
+              color: black;
+              cursor: default;
+            }
+          }
+
+          border: 1px solid white;
+          .thumbnail {
+            max-width: 100%;
+            max-height: 250px;
+          }
+          .makingArea {
+            .makingForm {
+              display: grid;
+              grid-template-columns: 100px 1fr;
+              margin: 5px 10px 5px 0px;
+              text-align: center;
+
+              .label {
+                text-align: right;
+              }
+              .input {
+              }
+              .textArea {
+                height: 130px;
+                resize: unset;
+              }
+              .button {
+                cursor: pointer;
+              }
+            }
+          }
+
+          .biddingArea {
+            .address {
+              display: grid;
+              grid-template-columns: 230px 1fr;
+              border-bottom: 1px solid white;
+            }
+            .makingForm {
+              display: grid;
+              grid-template-columns: 100px 1fr;
+              margin: 5px 10px 5px 0px;
+              text-align: center;
+
+              .label {
+                text-align: right;
+              }
+              .input {
+              }
+              .textArea {
+                height: 130px;
+                resize: unset;
+              }
+              .button {
+                cursor: pointer;
+              }
+            }
+            .biddingForm {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              margin-top: 25px;
+            }
+            .endForm {
+              display: grid;
+              grid-template-columns: 1fr;
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+
+      .eventLogArea {
+        display: flex;
+        height: inherit;
+        background-color: #eee;
+
+        .logText {
+          margin: 5px;
+          width: 100%;
+          resize: unset;
+          overflow-y: hidden;
+        }
+      }
+    }
+  }
+}
