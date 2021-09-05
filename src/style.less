@@ -1,3 +1,16 @@
+/* hide input number arrow */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 body {
   background-color: #08060d;
   color: #cfd2da;
@@ -18,6 +31,12 @@ body {
       display: flex;
       flex-direction: column;
       height: 100vh;
+
+      .address {
+        display: grid;
+        grid-template-columns: 230px 1fr;
+        border-bottom: 1px solid white;
+      }
 
       .contentsArea {
         .account {
@@ -68,11 +87,6 @@ body {
           }
 
           .biddingArea {
-            .address {
-              display: grid;
-              grid-template-columns: 230px 1fr;
-              border-bottom: 1px solid white;
-            }
             .makingForm {
               display: grid;
               grid-template-columns: 100px 1fr;

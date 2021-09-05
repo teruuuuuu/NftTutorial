@@ -1,7 +1,17 @@
 # build
-> npm install    
-> npm run truffle    
-> npm run build
+
+```
+$ npm install
+$ # solidity のビルド
+$ npm run truffle
+$ # js のビルド
+$ npm run build
+```
 
 # start
-> npm run server    
+
+事前に Ganache と IPFS の起動
+
+```
+$ npm run server
+```
