@@ -146,6 +146,14 @@ export class App extends React.Component {
                             auctionEnd: true
                         });
                     }
+                } else if (event.event == "Transfer") {
+                    const { mode, selectContract, selectTokenId } = this.state;
+                    const { tokenId, from, to } = event.returnValues;
+                    if (mode == MODE_BIDDING && selectContract.toLowerCase() == event.address.toLowerCase() && selectTokenId == tokenId) {
+                        this.set({
+                            tokenOwner: to
+                        });
+                    }
                 }
             }).on("error", console.error);
     }

@@ -122,6 +122,9 @@ contract Item is ERC721, AccessControl {
             _tokenOwner.transfer((_highestBid[tokenId] * 8) / 10);
             // 出品者に2割送金
             contractOwner.transfer((_highestBid[tokenId] * 2) / 10);
+
+            // トークン所有者を更新
+            _transfer(msg.sender, _highestBidder[tokenId], tokenId);
         }
     }
 
